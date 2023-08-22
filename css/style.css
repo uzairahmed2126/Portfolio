@@ -3,9 +3,10 @@
     padding: 0;
 }
 
-body{
+body {
     background-color: rgba(212, 116, 38, 0.664);
 }
+
 nav {
     display: flex;
     flex-direction: row;
