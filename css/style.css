@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
 
 :root {
-    /* dark shades of primary color*/
+    /* dark shades of primary color */
     --clr-primary-1: hsl(205, 86%, 17%);
     --clr-primary-2: hsl(205, 77%, 27%);
     --clr-primary-3: hsl(205, 72%, 37%);
@@ -52,14 +52,10 @@ body {
     background-color: var(--clr-primary-5)
 }
 
+/* 
 
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    background-color: var(--clr-primary-4)
+
 }
 
 .nav-link-tab {
@@ -73,13 +69,13 @@ nav {
 
 .nav-link-tab:hover {
     background-color: var(--clr-primary-4);
-    /* text-decoration:underline var(--clr-primary-6) 4px ; */
+    text-decoration:underline var(--clr-primary-6) 4px ;
     border-bottom: var(--clr-primary-6) solid 4px;
     border-radius: 0%;
 }
 
 .nav-link1 {
-    /* width: 90px; */
+    width: 90px;
     height: 13vh;
     text-indent: 10px;
     cursor: auto;
@@ -87,7 +83,7 @@ nav {
     box-shadow: 1px 4px 8px 1px #000000;
     animation: logo 6s infinite reverse;
 }
-/* grid */
+grid
 .paragraph{
     display: grid;
     grid-template-columns: repeat(4fr);
@@ -128,4 +124,207 @@ nav {
 
 .first {
     color: #fff;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,500;10..48,600&family=Preahvihear&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.header {
+    padding: 20px;
+    background-color: var(--clr-primary-4)
+}
+
+.headname {
+    font-size: 35px;
+    font-family: "Acme", sans-serif;
+    margin-left: 70px;
+}
+
+.header-link a {
+    font-size: 20px;
+    font-family: "Preahvihear", sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-right: 80px;
+}
+
+.header-link :hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    color: white;
+    margin-top: 10%;
+    margin-left: 25%;
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    font-family: "Barriecito", cursive;
+}
+
+.greet {
+    font-size: 50px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.info {
+    font-size: 30px;
+    font-family: "Acme", sans-serif;
+}
+
+.info span {
+    color: var(--clr-grey-1);
+    font-size: 40px;
+    animation: animation 1s ease-in-out;
+}
+
+@keyframes animation {
+    0% {
+        filter: brightness(0.2) blur(5px);
+    }
+
+    50% {
+        filter: brightness(0.3) blur(0px);
+        color: white;
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-right: 500px;
+    gap: 25px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.button button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Acme", sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: var(--clr-black);
+    color: white;
+}
+
+.button button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button button:hover {
+    background-color: rgba(0, 0, 0, 0.541);
+    transition: 0.5s ease-in-out;
+}
+
+.page-footer {
+    background-color: var(--clr-primary-2);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--clr-primary-4);
+    font-size: 20px;
+    text-align: center;
+}
+
+.page-footer .footer-logo,
+.page-footer a {
+    color: var(--clr-primary-7);
+    text-decoration: solid;
+}
+
+@media only screen and (max-width: 200px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+
+    .header {
+        margin-top: 10px;
+    }
+
+    .headname {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .header-link a {
+        font-size: 13px;
+        margin-right: 0px;
+    }
+
+    .header-link {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 5px;
+    }
+
+    .header-link a:hover {
+        text-decoration: underline;
+    }
+
+    .main-container {
+        margin: 100px 0px 0px 0px;
+        height: 100%;
+        width: 100%;
+        padding: 0 0 0 0px;
+    }
+
+    .greet {
+        font-size: 30px;
+    }
+
+    .info {
+        text-align: justify;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .info span {
+        font-size: 30px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-evenly;
+        padding-right: 0px;
+        gap: 0px;
+        margin: 100px 0 0 0;
+    }
+
+    .button button {
+        padding: 10px;
+        border-radius: 20%;
+        font-size: 15px;
+    }
+
+    .button button a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.776);
+    }
+
+    .page-footer {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
 }
