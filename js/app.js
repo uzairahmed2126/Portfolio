@@ -1,11 +1,9 @@
-const responsive = window.addEventListener('resize',()=>{
-    fn()
+const toggle = document.querySelector('.toggle')
+const mobile  = document.querySelector('.mobile')
+toggle.addEventListener('click',()=>{
+    tg()
 })
-const headerLink = document.querySelector('.header-link')
-function fn(){
-    if(screen==='760px'){
-        headerLink.style.visibility='hidden'
-    }else{
-        console.log('a')
-    }
+
+function tg(){
+    mobile.classList.toggle('active')
 }

@@ -3,328 +3,121 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
-
-:root {
-    /* dark shades of primary color */
-    --clr-primary-1: hsl(205, 86%, 17%);
-    --clr-primary-2: hsl(205, 77%, 27%);
-    --clr-primary-3: hsl(205, 72%, 37%);
-    --clr-primary-4: hsl(205, 63%, 48%);
-    /* primary/main color */
-    --clr-primary-5: hsl(205, 78%, 60%);
-    /* lighter shades of primary color */
-    --clr-primary-6: hsl(205, 89%, 70%);
-    --clr-primary-7: hsl(205, 90%, 76%);
-    --clr-primary-8: hsl(205, 86%, 81%);
-    --clr-primary-9: hsl(205, 90%, 88%);
-    --clr-primary-10: hsl(205, 100%, 96%);
-    /* darkest grey - used for headings */
-    --clr-grey-1: hsl(209, 61%, 16%);
-    --clr-grey-2: hsl(211, 39%, 23%);
-    --clr-grey-3: hsl(209, 34%, 30%);
-    --clr-grey-4: hsl(209, 28%, 39%);
-    /* grey used for paragraphs */
-    --clr-grey-5: hsl(210, 22%, 49%);
-    --clr-grey-6: hsl(209, 23%, 60%);
-    --clr-grey-7: hsl(211, 27%, 70%);
-    --clr-grey-8: hsl(210, 31%, 80%);
-    --clr-grey-9: hsl(212, 33%, 89%);
-    --clr-grey-10: hsl(210, 36%, 96%);
-    --clr-white: #fff;
-    --clr-red-dark: hsl(360, 67%, 44%);
-    --clr-red-light: hsl(360, 71%, 66%);
-    --clr-green-dark: hsl(125, 67%, 44%);
-    --clr-green-light: hsl(125, 71%, 66%);
-    --clr-black: #222;
-    --ff-primary: 'Roboto', sans-serif;
-    --ff-secondary: 'Open Sans', sans-serif;
-    --transition: all 0.3s linear;
-    --spacing: 0.1rem;
-    --radius: 0.25rem;
-    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    --max-width: 1170px;
-    --fixed-width: 620px;
-}
-
 body {
-    background-color: var(--clr-primary-5)
+    background-color: #ffffff;
 }
 
-/* 
-
-nav {
-
+.nav-bar {
+    background: #0074b2;
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    align-items: center;
+    box-shadow: 1px 4px 8px 1px;
 }
 
-.nav-link-tab {
-    background-color: var(--clr-primary-6);
-    padding: 10px;
-    border-radius: 10px;
+.nav-bar>a,
+.toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.nav-bar>a {
+    color: #000000c2;
+}
+
+a {
     text-decoration: none;
-    color: #000;
+}
+
+span {
+    border: none;
+}
+
+.name1 {
+    color: black;
+    font-style: italic;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.nav-link-tab:hover {
-    background-color: var(--clr-primary-4);
-    text-decoration:underline var(--clr-primary-6) 4px ;
-    border-bottom: var(--clr-primary-6) solid 4px;
-    border-radius: 0%;
+.name2 {
+    color: #ffffffa9;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.nav-link1 {
-    width: 90px;
-    height: 13vh;
-    text-indent: 10px;
-    cursor: auto;
-    border-radius: 50%;
-    box-shadow: 1px 4px 8px 1px #000000;
-    animation: logo 6s infinite reverse;
+.toggle:hover {
+    transform: rotate(90deg);
+    transition: all 100ms;
 }
-grid
-.paragraph{
-    display: grid;
-    grid-template-columns: repeat(4fr);
-    gap: 10px;
-    margin: 10px 0px 0px 10px;
-    background-color: transparent;
-    height: 100vh;
+
+.nav-bar>a:hover {
+    scale: 1.1;
+    color: #000000;
+    border-bottom: #000000 2px solid;
 }
-#first{
-    grid-column: 1/4;
+
+.nav-bar>:first-child {
+    margin-right: 140vh;
+    transform: rotate(-3deg);
+    transition: all 1s ease-in-out;
+    animation: logo alternate 1s forwards;
 }
-#second{
-    grid-column: 1/3;
+
+.nav-bar>:first-child:hover {
+    border-bottom: none;
 }
-#fourth{
-    grid-column: 1/4;
-}
-.paragraph > p{
-    background-color: var(--clr-primary-9);
-    border-radius: 10px;
-}
-.footer{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+
 @keyframes logo {
     0% {
-        transform: rotate(10deg);
         transition: all ease-in-out;
         scale: .90;
     }
 
-    100% {
-        font-size: 90px;
-    }
-}
-
-.first {
-    color: #fff;
-} */
-
-@import url("https://fonts.googleapis.com/css2?family=Acme&family=Barriecito&family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,500;10..48,600&family=Preahvihear&display=swap");
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-}
-
-.header {
-    padding: 20px;
-    background-color: var(--clr-primary-4)
-}
-
-.headname {
-    font-size: 35px;
-    font-family: "Acme", sans-serif;
-    margin-left: 70px;
-}
-
-.header-link a {
-    font-size: 20px;
-    font-family: "Preahvihear", sans-serif;
-    text-decoration: none;
-    color: white;
-    margin-right: 80px;
-}
-
-.header-link :hover {
-    text-decoration: underline;
-}
-
-.main-container {
-    color: white;
-    margin-top: 10%;
-    margin-left: 25%;
-    height: 50%;
-    width: 50%;
-    align-items: center;
-    font-family: "Barriecito", cursive;
-}
-
-.greet {
-    font-size: 50px;
-    font-family: "Bricolage Grotesque", sans-serif;
-}
-
-.info {
-    font-size: 30px;
-    font-family: "Acme", sans-serif;
-}
-
-.info span {
-    color: var(--clr-grey-1);
-    font-size: 40px;
-    animation: animation 1s ease-in-out;
-}
-
-@keyframes animation {
-    0% {
-        filter: brightness(0.2) blur(5px);
-    }
-
     50% {
-        filter: brightness(0.3) blur(0px);
-        color: white;
-    }
-
-    100% {
-        filter: brightness(1);
+        transition: all 1s ease-in-out;
     }
 }
 
-.button {
+.toggle {
+    display: none;
+}
+.active{
+    visibility: hidden;
+}
+.mobile{
     display: flex;
-    justify-content: center;
-    padding-right: 500px;
-    gap: 25px;
-    margin-top: 20px;
-    margin-left: 40px;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    align-items: end;
+    height: 100vh;
+    padding: 5px;
+    gap: 50px;
+    transition: all 1s;
+}
+.mobile>a {
+    color: #000000c2;
+    font-size: 1.5rem;
+}
+.mobile>a:hover {
+    scale: 1.1;
+    color: #000000;
 }
 
-.button button {
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-family: "Acme", sans-serif;
-    font-size: 17px;
-    cursor: pointer;
-    background-color: var(--clr-black);
-    color: white;
-}
-
-.button button a {
-    text-decoration: none;
-    color: white;
-}
-
-.button button:hover {
-    background-color: rgba(0, 0, 0, 0.541);
-    transition: 0.5s ease-in-out;
-}
-
-.page-footer {
-    background-color: var(--clr-primary-2);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: var(--clr-primary-4);
-    font-size: 20px;
-    text-align: center;
-}
-
-.page-footer .footer-logo,
-.page-footer a {
-    color: var(--clr-primary-7);
-    text-decoration: solid;
-}
-
-@media only screen and (max-width: 200px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-between;
+@media only screen and (max-width: 768px) {
+    .toggle {
+        display: block;
     }
 
-    .header {
-        margin-top: 10px;
+    .nav-bar>a {
+        visibility: hidden;
     }
 
-    .headname {
-        font-size: 20px;
-        margin-left: 20px;
+    .img {
+        width: 10%;
+        visibility: visible;
     }
-
-    .header-link a {
-        font-size: 13px;
-        margin-right: 0px;
-    }
-
-    .header-link {
-        display: flex;
-        justify-content: space-around;
-        margin-right: 5px;
-    }
-
-    .header-link a:hover {
-        text-decoration: underline;
-    }
-
-    .main-container {
-        margin: 100px 0px 0px 0px;
-        height: 100%;
-        width: 100%;
-        padding: 0 0 0 0px;
-    }
-
-    .greet {
-        font-size: 30px;
-    }
-
-    .info {
-        text-align: justify;
-        font-size: 20px;
-        margin-top: 40px;
-    }
-
-    .info span {
-        font-size: 30px;
-    }
-
-    .button {
-        display: flex;
-        justify-content: space-evenly;
-        padding-right: 0px;
-        gap: 0px;
-        margin: 100px 0 0 0;
-    }
-
-    .button button {
-        padding: 10px;
-        border-radius: 20%;
-        font-size: 15px;
-    }
-
-    .button button a {
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.776);
-    }
-
-    .page-footer {
-        width: 100%;
-        font-size: 15px;
-        text-align: center;
+    .nav-bar>:first-child {
+        margin-right: 40vh;
     }
 }
