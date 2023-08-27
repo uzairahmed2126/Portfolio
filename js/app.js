@@ -19,9 +19,9 @@ const BottomConatiner = document.querySelector('.paragraph')
 
 window.addEventListener('scroll', (event) => {
   console.dir(window.scrollY)
-  if (window.scrollY > 200) {
-    navBar.classList.add('active')
+  if (window.scrollY > 135) {
+    navBar.classList.add('active-nav')
   } else {
-    navBar.classList.remove('active')
+    navBar.classList.remove('active-nav')
   }
 })
