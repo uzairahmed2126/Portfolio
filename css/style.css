@@ -14,9 +14,11 @@ body {
     justify-content: space-around;
     height: 4rem;
     box-shadow: 1px 4px 8px 1px #0000008a;
-    position: fixed;
+    position: static;
     top: 0;
     width: 100%;
+    transition: all 1s ease-in-out;
+
 }
 
 .nav-bar>a,
@@ -53,7 +55,7 @@ span {
 
 .toggle:hover {
     transform: rotate(90deg);
-    transition: all 100ms;
+    transition: all 0.5s;
     color: #ffff;
 }
 
@@ -72,9 +74,6 @@ span {
 .nav-bar>:first-child:hover {
     border-bottom: none;
     
-}
-.paragraph{
-    margin-bottom: 90px;
 }
 
 @keyframes logo {
@@ -121,6 +120,11 @@ span {
 }
 .active{
     visibility: hidden;
+}
+.active-nav{
+    /* visibility: hidden; */
+    position: sticky;
+    
 }
 .mobile{
     display: flex;
